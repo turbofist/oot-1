@@ -9,11 +9,11 @@ SHELL = /bin/bash
 # If COMPARE is 1, check the output md5sum after building
 COMPARE := 1
 # If NON_MATCHING is 1, define the NON_MATCHING C flag when building
-NON_MATCHING := 0
+NON_MATCHING := 1
 # If ORIG_COMPILER is 1, compile with QEMU_IRIX and the original compiler
 ORIG_COMPILER := 0
 # If COMPILER is "gcc", compile with GCC instead of IDO.
-COMPILER := ido
+COMPILER := gcc
 # Target game version. Currently only the following version is supported:
 #   gc-eu-mq-dbg   GameCube Europe/PAL Master Quest Debug (default)
 VERSION := gc-eu-mq-dbg

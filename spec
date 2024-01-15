@@ -3377,6 +3377,12 @@ beginseg
 endseg
 
 beginseg
+    name "ovl_Strange_Note"
+    include "$(BUILD_DIR)/src/overlays/actors/ovl_Strange_Note/z_strange_note.o"
+    include "$(BUILD_DIR)/src/overlays/actors/ovl_Strange_Note/ovl_Strange_Note_reloc.o"
+endseg
+
+beginseg
     name "gameplay_keep"
     romalign 0x1000
     include "$(BUILD_DIR)/assets/objects/gameplay_keep/gameplay_keep.o"
@@ -6046,6 +6052,13 @@ beginseg
     name "object_zl4"
     romalign 0x1000
     include "$(BUILD_DIR)/assets/objects/object_zl4/object_zl4.o"
+    number 6
+endseg
+
+beginseg
+    name "object_strange_note"
+    romalign 0x1000
+    include "$(BUILD_DIR)/assets/objects/object_strange_note/object_strange_note.o"
     number 6
 endseg
 
@@ -10383,14 +10396,14 @@ endseg
 beginseg
     name "test01_scene"
     romalign 0x1000
-    include "$(BUILD_DIR)/assets/scenes/test_levels/test01/test01_scene.o"
+    include "build/assets/scenes/test_levels/test01/test01_scene.o"
     number 2
 endseg
 
 beginseg
     name "test01_room_0"
     romalign 0x1000
-    include "$(BUILD_DIR)/assets/scenes/test_levels/test01/test01_room_0.o"
+    include "build/assets/scenes/test_levels/test01/test01_room_0.o"
     number 3
 endseg
 
